@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .calendar{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-columns: 30px repeat(5, 50px);
+            row-gap: 20px;
+            column-gap: 10px;
+        }
+
+        .date, day{
+            background-color: skyblue;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            font-size: 1.5em;
+        }
+
+        .day{
+            background-color: lightgray;
+            font-size: 1em;
+        }
+
+        .containeeer{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .food{
+            border: 1px solid skyblue;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .food img{
+            width: 100%;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- .calendar>.date{$}*35-->
+    <div class="calendar">
+        <!-- .day*7 -->
+        <div class="day">S</div>
+        <div class="day">M</div>
+        <div class="day">T</div>
+        <div class="day">W</div>
+        <div class="day">T</div>
+        <div class="day">F</div>
+        <div class="day">S</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date">10</div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date">16</div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+    </div>
+
+    
+    <!-- .container>.food*12>img[scr="images/food-$.jpg"]+h3{Food Item $}+p{Price: \$$00}+p>lorem20 -->
+
+    <div class="containeeer">
+        <div class="food">
+            <img src="images/food-1.jpg" alt="">
+            <h3>Food Item 1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque iure adipisci blanditiis pariatur tempore sit libero assumenda, fugit quam consectetur.</p>
+        </div>
+        <div class="food">
+            <img src="images/food-2.jpg" alt="">
+            <h3>Food Item 2</h3>
+            <p>Price: $200</p>
+            <p>Rerum sit minima cumque. Odit ducimus quam quae expedita aliquam? Illo voluptatibus impedit molestiae? Fugit ducimus dignissimos aspernatur quaerat quam.</p>
+        </div>
+        <div class="food">
+            <img src="images/food-3.jpg" alt="">
+            <h3>Food Item 3</h3>
+            <p>Price: $300</p>
+            <p>Suscipit quidem quae eius? Vitae, expedita numquam. Vitae autem, tempora, sequi sed accusantium nisi repellat totam, iure corporis numquam porro.</p>
+        </div>
+        <div class="food">
+            <img src="images/food-4.jpg" alt="">
+            <h3>Food Item 4</h3>
+            <p>Price: $400</p>
+            <p>Commodi similique voluptatum corporis dolor repellat. Reiciendis cupiditate molestias suscipit beatae, voluptatum nostrum deleniti exercitationem magni voluptates aliquid quis minima.</p>
+        </div>
+        <div class="food">
+            <img src="images/food-5.jpg" alt="">
+            <h3>Food Item 5</h3>
+            <p>Price: $500</p>
+            <p>Error vero cupiditate rerum dignissimos. Sed accusamus quas commodi, officiis adipisci modi voluptatum non sequi, amet quibusdam autem ab fugit.</p>
+        </div>
+        <div class="food">
+            <img src="images/food-6.jpg" alt="">
+            <h3>Food Item 6</h3>
+            <p>Price: $600</p>
+            <p>Optio expedita dignissimos voluptates temporibus magni quaerat natus pariatur repellendus sequi repellat non numquam modi hic, fuga minus, facere delectus.</p>
+        </div>
+        <div class="food">
+            <img src="images/food-7.jpg" alt="">
+            <h3>Food Item 7</h3>
+            <p>Price: $700</p>
+            <p>Aliquam beatae officiis illum excepturi vero cum autem ut, dolore impedit, iste corporis consequuntur sunt deserunt ea dolor magni minus.</p>
+        </div>
+        <div class="food">
+            <img scr="images/food-8.jpg" alt="">
+            <h3>Food Item 8</h3>
+            <p>Price: $800</p>
+            <p>Eos molestias alias molestiae officiis nobis tempora fugit, porro adipisci eaque facere totam possimus labore voluptate inventore ea, nulla ullam.</p>
+        </div>
+        <div class="food">
+            <img scr="images/food-9.jpg" alt="">
+            <h3>Food Item 9</h3>
+            <p>Price: $900</p>
+            <p>Facere illum eaque nihil laborum atque provident expedita esse consequuntur doloribus. Ipsam aperiam illum perferendis accusamus libero. Magni, officiis rem?</p>
+        </div>
+        <div class="food">
+            <img scr="images/food-10.jpg" alt="">
+            <h3>Food Item 10</h3>
+            <p>Price: $1000</p>
+            <p>Quasi iure enim placeat reprehenderit animi magni fugiat dignissimos at fuga esse quo consequuntur excepturi reiciendis, voluptatem mollitia adipisci quod?</p>
+        </div>
+        <div class="food">
+            <img scr="images/food-11.jpg" alt="">
+            <h3>Food Item 11</h3>
+            <p>Price: $1100</p>
+            <p>Laudantium eaque ducimus voluptatibus voluptate nam temporibus illo? Ab similique quidem tenetur consectetur illum maiores doloribus sunt vero quas quis.</p>
+        </div>
+        <div class="food">
+            <img scr="images/food-12.jpg" alt="">
+            <h3>Food Item 12</h3>
+            <p>Price: $1200</p>
+            <p>Necessitatibus officia voluptatibus culpa similique tempore beatae eos recusandae ullam? Quia mollitia quasi eius nobis officia dignissimos harum numquam! Assumenda!</p>
+        </div>
+    </div>
+</body>
+</html>
