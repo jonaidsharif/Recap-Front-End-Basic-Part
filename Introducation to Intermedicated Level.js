@@ -1358,3 +1358,255 @@ var numbers = [45, 68, 56, 78, 89, 98];
 // }
 
 // Not isosceles
+
+
+
+
+
+
+
+
+
+
+//if else
+
+// var color = 'white';
+
+// if (color == 'blue') {
+//     console.log('Color is Blue');
+// }
+// else if (color == 'red') {
+//     console.log('Color is Red');
+// }
+// else if (color == 'green') {
+//     console.log('Color is Green');
+// }
+// else if (color == 'white') {
+//     console.log('Color is White');
+// }
+// else if (color == 'yellow') {
+//     console.log('Color is Yellow');
+// }
+// else {
+//     console.log('Color is Black');
+// }
+
+// Color is White
+
+
+// var color = 'black';
+
+// if (color == 'blue') {
+//     console.log('Color is Blue');
+// }
+// else if (color == 'red') {
+//     console.log('Color is Red');
+// }
+// else if (color == 'green') {
+//     console.log('Color is Green');
+// }
+// else if (color == 'white') {
+//     console.log('Color is White');
+// }
+// else if (color == 'yellow') {
+//     console.log('Color is Yellow');
+// }
+// else {
+//     console.log('Color is Black');
+// }
+
+// Color is Black
+
+
+// Switch Case Break and Continue
+
+// switch (color) {
+//     case 'blue':
+//         console.log('Color is Blue');
+//         break
+//     case 'red':
+//         console.log('Color is Red');
+//         break
+//     case 'white':
+//         console.log('Color is White');
+//         break
+//     case 'green':
+//         console.log('Color is Green');
+//         break
+//     case 'yellow':
+//         console.log('Color is Yellow');
+//         break
+//     default:
+//         console.log('Color is Black');
+//     case 'blue':
+//         break
+// }
+
+
+// var i = 0;
+// while(i < 10){
+//     console.log(i);
+//     i++;
+// }
+
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+
+
+// var i = 0;
+// while (i < 10) {
+//     console.log(i);
+//     if(i == 5){
+//         break;
+//     }
+//     i++;
+// }
+
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+
+
+// var i = 0;
+// for(var i=0; i<=20;i++) {
+//     console.log(i);
+//     if(i > 8){
+//         break;
+//     }
+// }
+
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+
+
+
+// var numbers = [54, 34, 56, 33, 37, 98, 85, 65, 98, 102];
+// for(var i=0; i<numbers.length; i++){
+//     var number = numbers[i];
+//     console.log(number);
+// }
+
+// 54
+// 34
+// 56
+// 33
+// 37
+// 98
+// 85
+// 65
+// 98
+// 102
+
+
+
+// var numbers = [54, 34, 56, 33, 37, 98, 85, 65, 98, 102];
+// for(var i=0; i<numbers.length; i++){
+//     var number = numbers[i];
+//     console.log(number);
+
+//     if(number > 90){
+//         break;
+//     }
+// }
+
+
+// 54
+// 34
+// 56
+// 33
+// 37
+// 98
+
+
+// var numbers = [54, 34, 56, 33, 37, 98, 85, 65, 98, 102];
+// for(var i=0; i<numbers.length; i++){
+//     var number = numbers[i];
+//     if(number > 90){
+//         continue;
+//     }
+//     console.log(number);
+// }
+
+
+// 54
+// 34
+// 56
+// 33
+// 37
+// 85
+// 65
+
+
+// var time = '10:15pm';
+// var bookPrice = 150;
+// var isWhiteColor = false;
+
+//array 
+// var partners = ['Jonaid', 'Karim', 'Jamal', 'Rahim', 'Kamrun', 'Lokhman', 'Montasir'];
+// var elementsCount = partners.length;
+// var mainOfIndex = partners.indexOf('Kamrun');
+// partners.push('Baros');
+// partners.pop();
+
+//conditions
+
+// if(bookPrice < 120){
+//     console.log('I will buy this one book');
+// }
+// else{
+//     console.log('Mama, your given me discount');
+// }
+
+
+// var i=0;
+// while(i<=17){
+//     i++;
+// }
+
+
+// for(var i=0;i<=17;i++){
+
+// }
+
+//Function
+
+// function outsideMoodUp(){
+//     if(time >= 19 && time <= 5){
+//         return true;
+//     }
+//     return false;
+// }
+
+// var moonStatus = outsideMoodUp(21);
+
+
+// let const
+
+// value of variable could change
+let price = 28;
+price = 29;
+price = 41;
+
+
+// value of variable will not change
+const name = "I love you, baby";
+console.log(name);
