@@ -701,17 +701,833 @@ ith = (i-1)th + (i-2)th
 // Handle Unexpected Input Using Simple Return
 
 
-function fibonacciSeries(num){
-    const fibo = [0, 1];
+// function fibonacciSeries(num){
+//     const fibo = [0, 1];
 
-    for(let i = 0; i <= num; i++){
-        fibo[i] = fibo[i - 1] + fibo[i - 2];
-    }
-    return fibo;
+//     for(let i = 2; i <= num; i++){
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+// }
+
+// const fiboSeries = fibonacciSeries([13]);
+// console.log(fiboSeries);
+
+
+// [
+//     0, 1, 1, 2, 3, 5,
+//     8, 13, 21, 34, 55, 89,
+//     144, 233
+// ]
+
+
+
+// function fibonacciSeries(num) {
+//     const fibo = [0, 1];
+
+//     for (let i = 2; i <= num; i++) {
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+// }
+
+// const fiboSeries = fibonacciSeries([1]);
+// console.log(fiboSeries);
+
+// [ 0, 1 ]
+
+
+
+// function fibonacciSeries(num) {
+//     const fibo = [0, 1];
+
+//     for (let i = 2; i <= num; i++) {
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+// }
+
+// const fiboSeries = fibonacciSeries(['jonaid']);
+// console.log(fiboSeries);
+
+// [0, 1]
+
+// function fibonacciSeries(num) {
+//     const fibo = [0, 1];
+
+//     for (let i = 2; i <= num; i++) {
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+// }
+
+// const fiboSeries = fibonacciSeries([20]);
+// console.log(fiboSeries);
+
+// [
+//     0, 1, 1, 2, 3, 5,
+//     8, 13, 21, 34, 55, 89,
+//     144, 233, 377, 610, 987, 1597,
+//     2584, 4181, 6765
+// ]
+
+
+
+// function fibonacciSeries(num) {
+//     console.log(typeof num);
+//     const fibo = [0, 1];
+
+//     for (let i = 2; i <= num; i++) {
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+// }
+
+// const fiboSeries = fibonacciSeries([20]);
+// console.log(fiboSeries);
+
+
+// [
+//     0, 1, 1, 2, 3, 5,
+//     8, 13, 21, 34, 55, 89,
+//     144, 233, 377, 610, 987, 1597,
+//     2584, 4181, 6765
+// ]
+
+
+
+// function fibonacciSeries(num) {
+//     if(typeof num != 'number'){
+//         return 'Please give me a number';
+//     }
+//     const fibo = [0, 1];
+
+//     for (let i = 2; i <= num; i++) {
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+// }
+
+// const fiboSeries = fibonacciSeries([1]);
+// console.log(fiboSeries);
+
+
+// Please give me a number
+
+
+
+// function fibonacciSeries(num) {
+//     if (typeof num != 'number') {
+//         return 'Please give me a number';
+//     }
+//     if(num < 2){
+//         return 'Please enter a positive number greater than 1';
+//     }
+//     const fibo = [0, 1];
+
+//     for (let i = 2; i <= num; i++) {
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+// }
+
+// const fiboSeries = fibonacciSeries(['23']);
+// console.log(fiboSeries);
+
+
+// Please give me a number
+
+
+
+// function fibonacciSeries(num) {
+//     if (typeof num != 'number') {
+//         return 'Please give me a number';
+//     }
+//     if(num < 2){
+//         return 'Please enter a positive number greater than 1';
+//     }
+//     const fibo = [0, 1];
+
+//     for (let i = 2; i < num; i++) {
+//         fibo[i] = fibo[i - 1] + fibo[i - 2];
+//     }
+//     return fibo;
+// }
+
+// const fiboSeries = fibonacciSeries([3]);
+// console.log(fiboSeries);
+
+
+// Please give me a number
+
+
+
+// Remove Duplicate Items From An Array
+
+
+// const names = ['jonaid', 'sharif', 'karim', 'jamal', 'bashar', 'john', 'shakil', 'sajib', 'kabris', 'giyas'];
+
+// function duplicatedRemoveValues(names){
+//   const unique = [];
+
+//   for(let i=0;i<names.length;i++){
+//     const element = names[i];
+//     console.log(element);
+//   }
+// }
+
+// const uniqueNames = duplicatedRemoveValues(names);
+// console.log(uniqueNames);
+
+
+// jonaid
+// sharif
+// karim
+// jamal
+// bashar
+// john
+// shakil
+// sajib
+// kabris
+// giyas
+// undefined
+
+
+
+// const names = ['jonaid', 'sharif', 'karim', 'jamal', 'bashar', 'john', 'shakil', 'sajib', 'kabris', 'giyas'];
+
+// function duplicatedRemoveValues(names) {
+//   const unique = [];
+
+//   // for (let i = 0; i < names.length; i++) {
+//   //   const element = names[i];
+//     // console.log(element);
+//   // }
+
+//   for(const element of names){
+//     console.log(element);
+//   }
+// }
+
+// const uniqueNames = duplicatedRemoveValues(names);
+// console.log(uniqueNames);
+
+
+// jonaid
+// sharif
+// karim
+// jamal
+// bashar
+// john
+// shakil
+// sajib
+// kabris
+// giyas
+// undefined
+
+
+
+
+// const names = ['jonaid', 'sharif', 'karim', 'jamal', 'bashar', 'john', 'shakil', 'sajib', 'kabris', 'giyas'];
+
+// function duplicatedRemoveValues(names) {
+//   const unique = [];
+
+  // for (let i = 0; i < names.length; i++) {
+  //   const element = names[i];
+  // console.log(element);
+  // }
+
+//   for (const element of names) {
+//     console.log(element);
+//     if(unique.indexOf(element) == -1){
+//       unique.push(element);
+//     }
+//   }
+//   return unique;
+// }
+
+// const uniqueNames = duplicatedRemoveValues(names);
+// console.log(uniqueNames);
+
+
+
+// const greetings = "Hello, how are you baby";
+
+// function reverseString(text){
+//   for(const letter of text){
+//     console.log(letter);
+//   }
+// }
+
+// const reversed = reverseString(greetings);
+// console.log(reversed);
+
+
+//H
+// e
+// l
+// l
+// o
+//   ,
+
+//   h
+// o
+// w
+
+// a
+// r
+// e
+
+// y
+// o
+// u
+
+// b
+// a
+// b
+// y
+
+
+
+
+
+// const greetings = "Hello, how are you baby";
+//
+// function reverseString(text) {
+//   let reverse = "";
+//   for (const letter of text) {
+//     console.log(letter);
+//     reverse = letter + reverse;
+//   }
+// }
+
+// const reversed = reverseString(greetings);
+// console.log(reversed);
+
+
+
+
+// Handle Unexpected Function Input Parameter Error
+
+
+// function addSum(num1, num2){
+//   const sum = num1 + num2;
+//   return sum;
+// }
+
+// const firstlyTotal = addSum(76, 77);
+// console.log(firstlyTotal);
+
+// 153
+
+
+// function addSum(num1, num2) {
+//   const sum = num1 + num2;
+//   return sum;
+// }
+
+// const secondTotal = addSum(978, 467);
+// console.log(secondTotal);
+
+// 1445
+
+
+// function multplyNumber(num1, num2){
+//   const result = num1 * num2;
+//   return result;
+// }
+
+// const firstResult = multplyNumber(34 + 98);
+// console.log(firstResult);
+
+// NaN
+
+
+
+// function multplyNumber(num1, num2) {
+//   const result = num1 * num2;
+//   return result;
+// }
+
+// const firstResult = multplyNumber(34 * 98);
+// console.log(firstResult);
+
+// NaN
+
+// function multplyNumber(num1, num2) {
+//   console.log('Parameter: ', num1, num2); // Parameter:  3332 undefined
+//   const result = num1 * num2;
+//   return result;
+// }
+
+// const firstResult = multplyNumber(34 * 98);
+// console.log(firstResult); // Nan
+
+
+
+// function multplyNumber(num1, num2) {
+//   console.log('Parameter: ', num1, num2); // Parameter:  34 98
+//   const result = num1 * num2;
+//   return result;
+// }
+
+// const firstResult = multplyNumber(34, 98);
+// console.log(firstResult);
+
+// 3332
+
+
+// Use Add And Multiplication To Calculate Wood Requirements
+
+// chairWood = 3cft/chairWood
+// tableWood = 10cft/tableWood
+// bedWood = 50cft/bed
+
+
+// function woodCalculator(chairQuantity, tableQuantity, bedQuantity) {
+//   const perChairWood = 3;
+//   const perTableWood = 10;
+//   const perBedWood = 50;
+//   // wood calculation
+//   const chairWoodCalculation = chairQuantity * perChairWood;
+//   const tableWoodCalculation = chairQuantity * perTableWood;
+//   const bedWoodCalculation = chairQuantity * perBedWood;
+
+//   const totalWood = chairWoodCalculation + tableWoodCalculation + bedWoodCalculation;
+// }
+
+// const firstOption = woodCalculator(1, 1, 1);
+// console.log(firstOption);
+
+// undefined
+
+
+// function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
+//   const perChairWood = 3;
+//   const perTableWood = 10;
+//   const perBedWood = 50;
+//   // wood calculation
+//   const chairWoodCalculation = chairQuantity * perChairWood;
+//   const tableWoodCalculation = chairQuantity * perTableWood;
+//   const bedWoodCalculation = chairQuantity * perBedWood;
+
+//   const totalWood = chairWoodCalculation + tableWoodCalculation + bedWoodCalculation;
+
+//   return totalWood;
+// }
+
+// const firstOption = woodCalculator(1, 1, 1);
+// console.log(firstOption);
+
+// 63
+
+
+
+// function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
+//   const perChairWood = 3;
+//   const perTableWood = 10;
+//   const perBedWood = 50;
+//   // wood calculation
+//   const chairWoodQuantity = chairQuantity * perChairWood;
+//   const tableWoodQuantity = tableQuantity * perTableWood;
+//   const bedWoodQuantity = perBedWood * perBedWood;
+
+//   const totalWood = chairWoodQuantity + tableWoodQuantity + bedWoodQuantity;
+
+//   return totalWood;
+// }
+
+// const firstOption = woodCalculator(1, 0, 0);
+// console.log(firstOption);
+
+// 2513
+
+
+
+// function woodCalculator(chairQuantity, tableQuantity, bedQuantity) {
+//   const perChairWood = 3;
+//   const perTableWood = 10;
+//   const perBedWood = 50;
+//   // wood calculation
+//   const chairWoodQuantity = chairQuantity * perChairWood;
+//   const tableWoodQuantity = tableQuantity * perTableWood;
+//   const bedWoodQuantity = perBedWood * perBedWood;
+
+//   const totalWood = chairWoodQuantity + tableWoodQuantity + bedWoodQuantity;
+
+//   return totalWood;
+// }
+
+// const firstOption = woodCalculator(1, 2, 3);
+// console.log(firstOption);
+
+// 2523
+
+
+
+
+// Write Foo, Bar, Foobar If Divisible By 3 Or 5 Or Both
+
+
+
+// for(let i=1; i<= 50;i++){
+//   if(i%3 == 0){
+//     console.log('foo');
+//   }
+//   console.log(i);
+// }
+
+
+// 1
+// 2
+// foo
+// 3
+// 4
+// 5
+// foo
+// 6
+// 7
+// 8
+// foo
+// 9
+// 10
+// 11
+// foo
+// 12
+// 13
+// 14
+// foo
+// 15
+// 16
+// 17
+// foo
+// 18
+// 19
+// 20
+// foo
+// 21
+// 22
+// 23
+// foo
+// 24
+// 25
+// 26
+// foo
+// 27
+// 28
+// 29
+// foo
+// 30
+// 31
+// 32
+// foo
+// 33
+// 34
+// 35
+// foo
+// 36
+// 37
+// 38
+// foo
+// 39
+// 40
+// 41
+// foo
+// 42
+// 43
+// 44
+// foo
+// 45
+// 46
+// 47
+// foo
+// 48
+// 49
+// 50
+
+
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 3 == 0) {
+//     console.log('foo');
+//   }
+//   else if (i % 5 == 0) {
+//     console.log('bar');
+//   }
+//   else{
+//     console.log(i);
+//   }
+// }
+
+
+// 1
+// 2
+// foo
+// 4
+// bar
+// foo
+// 7
+// 8
+// foo
+// bar
+// 11
+// foo
+// 13
+// 14
+// foo
+// 16
+// 17
+// foo
+// 19
+// bar
+// foo
+// 22
+// 23
+// foo
+// bar
+// 26
+// foo
+// 28
+// 29
+// foo
+// 31
+// 32
+// foo
+// 34
+// bar
+// foo
+// 37
+// 38
+// foo
+// bar
+// 41
+// foo
+// 43
+// 44
+// foo
+// 46
+// 47
+// foo
+// 49
+// bar
+
+
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 3 == 0) {
+//     console.log('foo');
+//   }
+//   else if (i % 5 == 0) {
+//     console.log('bar');
+//   }
+//   else if (i % 3 == 0 && i % 5 == 0) {
+//     console.log('foobar');
+//   }
+//   else {
+//     console.log(i);
+//   }
+// }
+
+
+// 1
+// 2
+// foo
+// 4
+// bar
+// foo
+// 7
+// 8
+// foo
+// bar
+// 11
+// foo
+// 13
+// 14
+// foo
+// 16
+// 17
+// foo
+// 19
+// bar
+// foo
+// 22
+// 23
+// foo
+// bar
+// 26
+// foo
+// 28
+// 29
+// foo
+// 31
+// 32
+// foo
+// 34
+// bar
+// foo
+// 37
+// 38
+// foo
+// bar
+// 41
+// foo
+// 43
+// 44
+// foo
+// 46
+// 47
+// foo
+// 49
+// bar
+
+
+
+
+// for (let i = 1; i <= 50; i++) {
+//   if (i % 3 == 0 && i % 5 == 0) {
+//     console.log('foobar');
+//   }
+//   else if (i % 3 == 0) {
+//     console.log('foo');
+//   }
+//   else if (i % 5 == 0) {
+//     console.log('bar');
+//   }
+//   else {
+//     console.log(i);
+//   }
+// }
+
+
+// 1
+// 2
+// foo
+// 4
+// bar
+// foo
+// 7
+// 8
+// foo
+// bar
+// 11
+// foo
+// 13
+// 14
+// foobar
+// 16
+// 17
+// foo
+// 19
+// bar
+// foo
+// 22
+// 23
+// foo
+// bar
+// 26
+// foo
+// 28
+// 29
+// foobar
+// 31
+// 32
+// foo
+// 34
+// bar
+// foo
+// 37
+// 38
+// foo
+// bar
+// 41
+// foo
+// 43
+// 44
+// foobar
+// 46
+// 47
+// foo
+// 49
+// bar
+
+
+
+// Find The Cheapest Phone From An Array Of Phone Objects
+
+
+// const phones = [
+//   { name: 'sumsung s5', price: 45000, camera: 10, storage: 32},
+//   { name: 'Walton m35', price: 15000, camera: 8, storage: 8},
+//   { name: 'Xiaomi m89', price: 12000, camera: 8, storage: 16},
+//   { name: 'Oppo a78', price: 17000, camera: 8, storage: 32},
+//   { name: 'Nokia a34', price: 10000, camera: 8, storage: 8},
+//   { name: 'HTC h81c', price: 25000, camera: 8, storage: 16}
+// ];
+
+// let cheapest = phones[0];
+// for(const phone of phones){
+//   // Compare price only
+//   if(phone.price < cheapest.price){
+//     cheapest = phone;
+//   }
+// }
+
+// console.log(cheapest);
+
+// { name: 'Nokia a34', price: 10000, camera: 8, storage: 8 }
+
+
+
+// Calculate The Total Cost Of The Products In A Shopping Cart
+
+
+// const products = [
+//   { name: 'Laptop', price: 43000 },
+//   { name: 'Shirt', price: 2500 },
+//   { name: 'Watch', price: 8000 },
+//   { name: 'Phone', price: 33000 },
+//   { name: 'Wallet', price: 2000 },
+// ]
+
+// let totalPrice = 0;
+
+// for(const product of products){
+//   totalPrice = totalPrice + product;
+// }
+// console.log(totalPrice);
+
+
+// 0[object Object][object Object][object Object][object Object][object Object]
+
+
+
+const products = [
+  { name: 'Laptop', price: 43000 },
+  { name: 'Shirt', price: 2500 },
+  { name: 'Watch', price: 8000 },
+  { name: 'Phone', price: 33000 },
+  { name: 'Wallet', price: 2000 }
+];
+
+let totalPrice = 0;
+
+for (const product of products) {
+  totalPrice = totalPrice + product.price;
 }
-
-const fiboSeries = fibonacciSeries([234]);
-console.log(fiboSeries);
+// console.log(totalPrice); // 88500
 
 
-21.7
+const cart = [
+  { name: 'Laptop', price: 43000, quantity: 1 },
+  { name: 'Shirt', price: 2500, quantity:  8},
+  { name: 'Watch', price: 8000, quantity:  3},
+  { name: 'Phone', price: 33000, quantity:  1},
+  { name: 'Wallet', price: 2000, quantity:  2}
+];
+
+let cartTotal = 0
+
+for (const product of cart){
+  console.log(product);
+  const productTotal = product.price * product.quantity;
+  cartTotal = cartTotal + productTotal;
+}
