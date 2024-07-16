@@ -1500,34 +1500,366 @@ ith = (i-1)th + (i-2)th
 
 
 
-const products = [
-  { name: 'Laptop', price: 43000 },
-  { name: 'Shirt', price: 2500 },
-  { name: 'Watch', price: 8000 },
-  { name: 'Phone', price: 33000 },
-  { name: 'Wallet', price: 2000 }
-];
+// const products = [
+//   { name: 'Laptop', price: 43000 },
+//   { name: 'Shirt', price: 2500 },
+//   { name: 'Watch', price: 8000 },
+//   { name: 'Phone', price: 33000 },
+//   { name: 'Wallet', price: 2000 }
+// ];
 
-let totalPrice = 0;
+// let totalPrice = 0;
 
-for (const product of products) {
-  totalPrice = totalPrice + product.price;
+// for (const product of products) {
+//   totalPrice = totalPrice + product.price;
+// }
+// // console.log(totalPrice); // 88500
+
+
+// const cart = [
+//   { name: 'Laptop', price: 43000, quantity: 1 },
+//   { name: 'Shirt', price: 2500, quantity:  8},
+//   { name: 'Watch', price: 8000, quantity:  3},
+//   { name: 'Phone', price: 33000, quantity:  1},
+//   { name: 'Wallet', price: 2000, quantity:  2}
+// ];
+
+// let cartTotal = 0
+
+// for (const product of cart){
+//   console.log(product);
+//   const productTotal = product.price * product.quantity;
+//   cartTotal = cartTotal + productTotal;
+// }
+
+
+
+
+
+// Traveling In A Jungle And Counting Wild Animals
+
+
+// function animalCount(miles) {
+//   if(miles <= 10) {
+//     const count = miles * 10;
+//     return count;
+//   }
+// }
+
+// const animals = animalCount(8);
+// console.log(animals);
+
+// 80
+
+
+// function animalCount(miles) {
+//   if (miles <= 10) {
+//     const count = miles * 10;
+//     return count;
+//   }
+// }
+
+// const animals = animalCount(13);
+// console.log(animals);
+
+// undefined
+
+
+
+// function animalCount(miles) {
+//   const animalDensityFirst10Miles = 10;
+//   const animalDensitySecond10Miles = 50;
+//   if (miles <= 10) {
+//     const count = miles * animalDensityFirst10Miles;
+//     return count;
+//   }
+//   else if(miles <=20) {
+//     const firstDenseAnimals = 10 * animalDensityFirst10Miles;
+//     const restMiles = miles - 10;
+//     const secondDenseAnimals = restMiles * animalDensitySecond10Miles;
+//     const totalAnimals = firstDenseAnimals + secondDenseAnimals;
+//     return totalAnimals;
+//   }
+// }
+
+// const animals = animalCount(13);
+// console.log(animals);
+
+// 250
+
+
+// function animalCount(miles) {
+//   const animalDensityFirst10Miles = 10;
+//   const animalDensitySecond10Miles = 50;
+//   if (miles <= 10) {
+//     const count = miles * animalDensityFirst10Miles;
+//     return count;
+//   }
+//   else if (miles <= 20) {
+//     const firstDenseAnimals = 10 * animalDensityFirst10Miles;
+//     const restMiles = miles - 10;
+//     const secondDenseAnimals = restMiles * animalDensitySecond10Miles;
+//     const totalAnimals = firstDenseAnimals + secondDenseAnimals;
+//     return totalAnimals;
+//   }
+// }
+
+// const animals = animalCount(17);
+// console.log(animals);
+
+// 450
+
+// function animalCount(miles) {
+//   const animalDensityFirst10Miles = 10;
+//   const animalDensitySecond10Miles = 50;
+//   if (miles <= 10) {
+//     const count = miles * animalDensityFirst10Miles;
+//     return count;
+//   }
+//   else if (miles <= 20) {
+//     const firstDenseAnimals = 10 * animalDensityFirst10Miles;
+//     const restMiles = miles - 10;
+//     const secondDenseAnimals = restMiles * animalDensitySecond10Miles;
+//     const totalAnimals = firstDenseAnimals + secondDenseAnimals;
+//     return totalAnimals;
+//   }
+// }
+
+// const animals = animalCount(23);
+// console.log(animals);
+
+
+// undefined
+
+
+
+// function animalCount(miles) {
+//   const animalDensityFirst10Miles = 10;
+//   const animalDensitySecond10Miles = 50;
+//   const animalDensityRestMiles = 100;
+//   if (miles <= 10) {
+//     const count = miles * animalDensityFirst10Miles;
+//     return count;
+//   }
+//   else if (miles <= 20) {
+//     const firstDenseAnimals = 10 * animalDensityFirst10Miles;
+//     const restMiles = miles - 10;
+//     const secondDenseAnimals = restMiles * animalDensitySecond10Miles;
+//     const totalAnimals = firstDenseAnimals + secondDenseAnimals;
+//     return totalAnimals;
+//   }
+//   else {
+//     const firstDenseAnimals = 10 * animalDensityFirst10Miles;
+//     const secondDenseAnimals = 10 * animalDensitySecond10Miles;
+//     const restMiles = miles - 20;
+//     const restDenseAnimals = restMiles * animalDensityRestMiles;
+//     const totalAnimals = firstDenseAnimals + secondDenseAnimals + restDenseAnimals;
+//     return totalAnimals;
+//   }
+// }
+
+// const animals = animalCount(25);
+// console.log(animals);
+
+// 23 -> 900 or 25 -> 1100
+
+
+
+// 1. Write three variables (number, string, boolean)
+
+
+
+
+// 2. Two variables using (let, const)
+
+// 3. Simple Math Operations( +, -, *, /, % )
+
+// 4. Comparison ()
+
+// 5. Two conditions, case-01: fulfill both conditions
+                  //  case-02: fulfill at least one conditions
+
+// 6. if-else
+
+// 7. While loop to display 7 to 19 all numbers. Only display add numbers including 7 to 19
+
+// 8. Declare an array number of elements. Update or change 4th position element. Add or remove elements. Check whelther a specific value exists in the array
+
+// 9. Use any for loop to display every elements of an array.
+
+// 10. You have an array of numbers. Display only the numbers bigger than 80
+
+
+// 11. Write a function that three numbers and returns the multiplication of the three numbers
+
+// 12. Declare an object and change any property of that
+
+// 13. Conversation feetToInch, centimeterToMeter
+
+// 14. Calculation -> paperRequirements
+
+// books has 100 pages
+// books has 200 pages
+// books has 300 pages
+
+// 15. friends   -> bestFriend
+
+// 16. Will stop the loop if the array havs any negative number and returns all the positive number before the negative number -> onlyPositive
+
+// Probelm 1: ana to vori -> anaToVori
+
+// Problem 2: pandaCost -> three parameter like sangara, shomosa and jilafe
+
+// Problem 3: picnicBudget
+
+// Problem 4: oddFriend
+
+// Understand For Loop In A Forward And Reverse Way - Recursion
+
+// for(let i=1; i<6; i++) {
+//   console.log(i);
+// }
+
+// 1
+// 2
+// 3
+// 4
+// 5
+
+
+// function consoleNumber(i) {
+//   console.log(i);
+// }
+
+// consoleNumber(1);
+
+// 1
+
+
+
+
+
+// function consoleNumber(i) {
+//   console.log(i);
+//   consoleNumber(i);
+
+// }
+
+// consoleNumber(1);
+
+
+// infinity loop passing 1 1 1....... value
+
+
+
+// function consoleNumber(i) {
+//   console.log(i);
+//   consoleNumber(i++);
+
+// }
+
+// consoleNumber(1);
+
+// infinity loop passing 1 1 1.... value
+
+
+// function consoleNumber(i) {
+//   console.log(i);
+//   consoleNumber(i+1);
+
+// }
+
+// consoleNumber(1);
+
+
+// infinity loop passing 1 2 3......... value
+
+
+// for(let i=1;i<6;i++) {
+//   console.log(i);
+// }
+
+// function consoleNumber(i) {
+//   if(i > 5) {
+//     return;
+//   }
+//   console.log(i);
+//   consoleNumber(i+1);
+
+// }
+
+// consoleNumber(1);
+
+
+// 1
+// 2
+// 3
+// 4
+// 5
+
+
+
+// Understand Recursion Using Sum Of Numbers
+
+
+// let sum = 0;
+
+// for(let i=5;i >= 1;i--) {
+//   sum += i;
+// }
+
+// console.log(sum);
+
+// 15
+
+// function sum(i) {
+//   return i+sum(i--);
+// }
+
+// console.log(sum(5))
+
+
+// return i + sum(i--);
+//   ^
+
+//   RangeError: Maximum call stack size exceeded
+
+
+
+// function sum(i) {
+//   console.log(i);
+//   return i + sum(i--);
+// }
+
+// console.log(sum(5));
+
+// infinity looping about 5 5 5 5....... value runnig/
+
+// function sum(i) {
+//   console.log(i);
+//   return i + sum(--i);
+// }
+
+// console.log(sum(5));
+
+// infinity looping -1 -2 -3 -4........... about running
+
+
+
+
+function sum(i) {
+  console.log(i);
+  if(i == 1) {
+    return 1;
+  }
+  return i + sum(--i);
 }
-// console.log(totalPrice); // 88500
 
+console.log(sum(5));
 
-const cart = [
-  { name: 'Laptop', price: 43000, quantity: 1 },
-  { name: 'Shirt', price: 2500, quantity:  8},
-  { name: 'Watch', price: 8000, quantity:  3},
-  { name: 'Phone', price: 33000, quantity:  1},
-  { name: 'Wallet', price: 2000, quantity:  2}
-];
-
-let cartTotal = 0
-
-for (const product of cart){
-  console.log(product);
-  const productTotal = product.price * product.quantity;
-  cartTotal = cartTotal + productTotal;
-}
+// 5
+// 4
+// 3
+// 2
+// 1
+// 15
